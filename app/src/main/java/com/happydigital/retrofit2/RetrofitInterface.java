@@ -21,6 +21,6 @@ public interface RetrofitInterface {
     @POST("wall/entries")
     Call<JsonElement> getPost(@Body PostModelRequest postModelRequest);
 
-    @POST("wall/entries")
+    @POST(MainActivity.URL)
     Call<PostModelResponse> getPostViaModel(@Body PostModelRequest postModelRequest);
 }
